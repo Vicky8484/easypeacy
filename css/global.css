@@ -135,8 +135,18 @@ body {
   border-radius: 5px;
   text-decoration: none;
 }
+
+.button:hover {
+  filter: brightness(95%);
+}
+
 .redBtn {
   background-color: #b22000;
+  color: #fff;
+}
+
+.yellowBtn {
+  background-color: #ffc166;
   color: #fff;
 }
 

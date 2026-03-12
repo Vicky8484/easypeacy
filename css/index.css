@@ -129,6 +129,12 @@
   align-content: center;
 }
 
+.bmDisclaimer {
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: #393939;
+}
+
 .kategorierSection {
   background-color: #f0e7c8;
   padding-top: 2rem;
