@@ -1,12 +1,20 @@
 const params = new URLSearchParams(window.location.search);
-const myCategory = params.get("recipes");
+const mealType = params.get("mealType");
 
-const listURL = "https://dummyjson.com/recipes?limit=100";
-console.log(listURL);
+// Build URL based on whether a meal type filter is applied
+const listURL = mealType ? `https://dummyjson.com/recipes/meal-type/${mealType}` : "https://dummyjson.com/recipes?limit=100";
+
+console.log("Filter URL:", listURL);
 const listContainer = document.querySelector(".opskrifterBox");
 
 function getRecipes() {
-  fetch(listURL).then((res) => res.json().then((data) => showRecipes(data.recipes)));
+  fetch(listURL)
+    .then((res) => res.json())
+    .then((data) => {
+      const recipes = data.recipes || data;
+      showRecipes(recipes);
+    })
+    .catch((error) => console.error("Error fetching recipes:", error));
 }
 
 function showRecipes(recipes) {
