@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Peacy</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img-vid/epfavicon.webp">
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/slideshow.js" defer></script>
+    <script src="js/kategorier.js" defer></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img-vid/eplogo.webp" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="opskrifter.html">Opskrifter</a></li>
+                <li><a href="helloeasy.html">HelloEasy</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div id="hero-box">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <!--<div class="numbertext">1 / 6</div>-->
+                    <img src="img-vid/banner1.webp" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <!--<div class="numbertext">2 / 6</div>-->
+                    <img src="img-vid/banner2.webp" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div id="main-box">
+            <div class="sidepanel">
+                <div class="spSection1">
+                    <h3>Ugens tiktok</h3>
+                    <video height="400" controls tools loop muted>
+                        <source src="img-vid/ugenstiktok.mp4" type="video/mp4">
+                        Din browser understøtter ikke video-tagget.
+                    </video>
+                    <a href="enkeltopskrift.html?recipeId=11" class="redBtn button">Se opskrift</a>
+                </div>
+                <div class="spSection2">
+                    <h3>Følg os!</h3>
+                    <button class="redBtn button">Instagram</button>
+                    <button class="redBtn button">TikTok</button>
+                    <button class="redBtn button">FaceBook</button>
+                </div>
+                <div class="spSection3">
+                    <h3>Vær med!</h3>
+                    <a href="forms.html" class="redBtn button">Indsend opskrift</a>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="kategorierSection">
+                    <h1>Kategorier</h1>
+                    <div class="kategorierBox">
+                        <a href="opskrifter.html/recipes/meal-type/dinner" class="kategori">
+                            <img src="img-vid/kategori-img1.webp" alt="aftensmad">
+                            <h3>Aftensmad</h3>
+                        </a>
+                        <a href="opskrifter.html" class="kategori">
+                            <img src="img-vid/kategori-img2.webp" alt="aftensmad">
+                            <h3>Frokost</h3>
+                        </a>
+                        <a href="opskrifter.html" class="kategori">
+                            <img src="img-vid/kategori-img3.webp" alt="aftensmad">
+                            <h3>Snacks</h3>
+                        </a>
+                        <a href="opskrifter.html" class="kategori">
+                            <img src="img-vid/kategori-img4.webp" alt="aftensmad">
+                            <h3>Dessert</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="blivMedlemSection">
+                    <h1>Bliv medlem - Kun 20kr!</h1>
+                    <div class="bmInfoBox">
+                        <div class="bminfo">
+                            <p>For kun 20kr om måneden kan du tilmelde dig HelloEasy pakken,
+                                hvor du får adgang til HelloFresh ydelser som skræddersyede madplaner og råvarer og
+                                opskrifter leveret til døren. Med HelloEasy får du 50% rabat.</p>
+                            <p>*For at tilmelde dig skal du være studerende*</p>
+                        </div>
+                        <div class="blivmedlem">
+                            <a href="helloeasy.html" class="greenBtn button">Bliv medlem</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nyeOpskrifterSection">
+                    <h1>Nye opskrifter</h1>
+                    <div class="opskrifterBox">
+                        <div class="noCard">
+                            <img src="https://cdn.dummyjson.com/recipe-images/4.webp" alt="mad">
+                            <div class="noCard-info">
+                                <h3>Chicken Alfredo Pasta</h3>
+                                <p>Sværhedsgrad Medium</p>
+                                <p>Kalorier 500</p>
+                                <br>
+                                <a href="enkeltopskrift.html?recipeId=4" class="orangeBtn button">Se
+                                    opskrift</a>
+                            </div>
+                        </div>
+                        <div class="noCard">
+                            <img src="https://cdn.dummyjson.com/recipe-images/9.webp" alt="mad">
+                            <div class="noCard-info">
+                                <h3>Caprese Salad</h3>
+                                <p>Sværhedsgrad Easy</p>
+                                <p>Kalorier 200</p>
+                                <br>
+                                <a href="enkeltopskrift.html?recipeId=9" class="orangeBtn button">Se opskrift</a>
+                            </div>
+                        </div>
+                        <div class="noCard">
+                            <img src="https://cdn.dummyjson.com/recipe-images/13.webp" alt="mad">
+                            <div class="noCard-info">
+                                <h3>Aloo Keema</h3>
+                                <p>Sværhedsgrad Medium</p>
+                                <p>Kalorier 380</p>
+                                <br>
+                                <a href="enkeltopskrift.html?recipeId=13" class="orangeBtn button">Se opskrift</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="tern-box">
+
+        </div>
+        <div class="footerInfo-box">
+            <p>Email: easypeacyfood@gmail.com</p>
+            <p>Telefon nummer: 12 34 56 78</p>
+            <p>Easy Peacy HQ: Lynghamarvej 9</p>
+        </div>
+    </footer>
+</body>
+
+</html>

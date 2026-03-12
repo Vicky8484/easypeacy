@@ -1,0 +1,167 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/************ menu + burger menu **********/
+header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 70px;
+  background-color: #b22000;
+}
+
+.logo img {
+  width: 300px;
+  height: auto;
+  border-radius: 0;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  padding-block: 1rem;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #edf2f4;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #ffc166;
+  text-decoration: none;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff6d8;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
+  .menu a {
+    color: #000;
+  }
+  .menu a:hover {
+    color: #b22000;
+    text-decoration: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #fff6d8;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px #0000001a;
+    z-index: 1;
+  }
+}
+
+/************ body **********/
+body {
+  background-color: #fff6d8;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/************ knapper **********/
+.button {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  padding-block: 6px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.redBtn {
+  background-color: #b22000;
+  color: #fff;
+}
+
+.greenBtn {
+  background-color: #96dc14;
+  color: #000;
+}
+
+.orangeBtn {
+  background-color: #ff8445;
+  color: #fff;
+}
+
+/************ footer **********/
+.tern-box {
+  height: 200px;
+  background-image: url("../img-vid/ternet-baggrund.webp");
+}
+.footerInfo-box {
+  background-color: #b22000;
+  color: #edf2f4;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
