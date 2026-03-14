@@ -1,0 +1,245 @@
+/**************** Global ****************/
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 16px;
+}
+
+button {
+  font-family: "Lexend", sans-serif;
+}
+
+/******************************** 1. opskriftSection - billede og tekst ********************************/
+.opskriftSection {
+  background-color: #f0e7c8;
+  margin: 3rem 15rem 0;
+  border-radius: 1rem 1rem 0 0;
+  padding-bottom: 3rem;
+}
+
+.opskriftHeader {
+  display: flex;
+  padding: 3rem 8rem;
+  gap: 2rem;
+}
+
+.opskriftHeader h2 {
+  padding-bottom: 0.5rem;
+}
+
+.opskriftHeader img {
+  width: 400px;
+  border-radius: 2rem;
+}
+
+.opskriftHeader p {
+  margin: 1.5rem 0;
+  font-size: 18px;
+}
+
+.recipe-info p {
+  display: grid;
+  grid-template-columns: 160px auto;
+}
+
+/********** 1. opskriftSection - collapsible *********/
+.collapsible {
+  background-color: #f0e7c8;
+  cursor: pointer;
+  padding: 2rem 8rem 1.5rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+/* hover */
+.active,
+.collapsible:hover {
+  background-color: #d1c8a7;
+}
+
+/* når den er klikket på */
+.content {
+  padding: 0rem 10rem 2rem;
+  display: none;
+  background-color: #f0e7c8;
+}
+
+.content li {
+  margin-bottom: 20px;
+}
+
+/******************************** 2. kommentarSection  ********************************/
+.kommentarSection {
+  background-color: #ffc166;
+  margin: 0 15rem;
+  padding: 4rem 15rem;
+}
+
+.box {
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 1.5rem 0;
+}
+
+.box2 {
+  border-radius: 2rem;
+  padding: 4rem 10rem 4rem 11rem;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto 1.5rem;
+  border: none;
+  font-family: "Lexend", sans-serif;
+  font-size: 18px;
+}
+
+.box2:focus {
+  border: 2px solid rgb(164, 164, 164);
+  outline: none;
+}
+
+.kommentarSection p {
+  margin: 1.5rem 0;
+  font-size: 18px;
+}
+
+.kommentarSection button {
+  display: block;
+  margin: 0 auto;
+}
+
+.skrivHer {
+  padding-top: 5rem;
+}
+
+/******************************** 3. ratingSection  ********************************/
+.ratingSection {
+  background-color: #f0e7c8;
+  margin: 0rem 15rem 3rem;
+  border-radius: 0 0 1rem 1rem;
+  padding: 5rem;
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 80px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.rating input:checked ~ label {
+  color: gold;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: gold;
+}
+
+.ratingSection button,
+.kommentarSection button {
+  width: 250px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/******************************** Mindre version  ********************************/
+@media (max-width: 1500px) {
+  /* 1 */
+  .opskriftSection {
+    margin: 3rem 10rem 0;
+    justify-self: center;
+  }
+
+  .collapsible {
+    padding: 1rem 5rem;
+  }
+
+  /* 2 */
+  .kommentarSection {
+    margin: 0 10rem 0;
+    padding: 8rem;
+  }
+
+  .box {
+    margin: 1rem 0;
+  }
+
+  .box2 {
+    border-radius: 2rem;
+    padding: 2rem 5rem;
+  }
+
+  .skrivHer {
+    justify-self: center;
+  }
+
+  /* 3 */
+  .ratingSection {
+    margin: 0 10rem 3rem;
+    padding: 5rem;
+  }
+}
+
+/******************************** MOBIL  ********************************/
+
+@media (max-width: 1000px) {
+  /* 1 */
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .opskriftSection {
+    margin: 2rem 2rem 0;
+  }
+
+  .opskriftHeader {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    padding: 3rem 5rem 1rem;
+  }
+
+  .collapsible {
+    padding: 1rem 5rem;
+  }
+
+  /* 2 */
+
+  .kommentarSection {
+    margin: 0 2rem 0;
+    padding: 5rem;
+  }
+
+  /* 3 */
+  .ratingSection {
+    margin: 0 2rem 2rem;
+  }
+}
