@@ -4,10 +4,6 @@
   grid-template-columns: 1fr 4fr;
 }
 
-/* #hero-box {
-  display: none;
-} */
-
 /****** sidepanel + children ******/
 .sidepanel {
   text-align: center;
@@ -98,8 +94,8 @@
 }
 
 .blivMedlemSection {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .blivMedlemSection h1 {
@@ -120,7 +116,6 @@
 }
 
 .blivmedlem {
-  background-color: #f0e7c8;
   text-align: center;
   align-content: center;
 }
