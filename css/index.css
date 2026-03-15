@@ -48,6 +48,12 @@
   margin-bottom: 1rem;
 }
 
+.indsendInfo {
+  padding: 2rem;
+  padding-top: 1rem;
+  text-wrap: balance;
+  color: #2c2c2c;
+}
 /****** sections + children ******/
 .nyeOpskrifterSection {
   background-color: #f0e7c8;
@@ -221,6 +227,18 @@
     margin: auto;
     margin-top: 1rem;
     overflow-x: auto;
+  }
+
+  .bmInfoBox {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .bminfo {
+    text-align: center;
+    text-wrap: balance;
+    padding: 1rem 2rem 2rem;
+    margin: 0;
   }
 }
 
