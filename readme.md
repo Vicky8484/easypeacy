@@ -15,16 +15,16 @@ Sitet består af flere sider, hvor brugeren kan:
 
 ## Links
 
-- GitHub repository: [(https://github.com/Vicky8484/easypeacy)]
-- GitHub Pages: [https://vicky8484.github.io/easypeacy/index.html]
-- Figma: [https://www.figma.com/design/IyaF01suc8vecBsvmi5yIg/Tema-8---Gruppe-10?node-id=230-2&t=pbkgWspIarWMfgXh-1]
-- Trello: [https://trello.com/b/H7PQK9IQ/tema-8-gruppe-10]
+- [GitHub repository](https://github.com/Vicky8484/easypeacy)
+- [GitHub Pages](https://vicky8484.github.io/easypeacy/index.html)
+- [Figma](https://www.figma.com/design/IyaF01suc8vecBsvmi5yIg/Tema-8---Gruppe-10?node-id=230-2&t=pbkgWspIarWMfgXh-1)
+- [Trello](https://trello.com/b/H7PQK9IQ/tema-8-gruppe-10)
 
 ## Projektstruktur:
 
 Projektet er opdelt i HTML, CSS og JavaScript-filer
 
-project/
+easypeacy/
 ├── index.html
 ├── opskrifter.html
 ├── enkeltopskrift.html
@@ -128,7 +128,8 @@ Vi har brugt camelCase i JavaScript, fordi det gør koden mere ensartet og lette
 Vi har kommenteret meget i det globale.css, så det er helt tydeligt hvad der er hvad for alle
 
 Eksempel:
-`
+
+```
 /************ menu + burger menu **********/
 header {
   top: 0;
@@ -138,7 +139,8 @@ header {
   padding: 20px;
   height: 70px;
   background-color: #b22000;
-}`
+}
+```
 
 I vores individuelle css-filer har vi valgt at overlade det til det medlem som er ansvarlig for siden, hvor meget personen vil kommentere.
 
@@ -148,6 +150,7 @@ Vi henter data fra et API i JSON-format.
 
 Et objekt kan fx se sådan ud:
 
+```
 {
 "id": 1,
 "name": "Classic Margherita Pizza",
@@ -185,6 +188,7 @@ Et objekt kan fx se sådan ud:
 "Dinner"
 ]
 }
+```
 
 **Felter vi bruger:**
 
@@ -216,18 +220,34 @@ HTML-validering:
 
 Vores arbejdsfordeling:
 
-- Victory - index.html/global.css/header+footer
-- Victor - opskrifter.html/opskrifter.css/opskrifter.js
-- Laura - enkeltopskrift.html/enkeltopskrift.css/enkeltopskrift.js
-- Marie - forms.html/helloeasy.html/forms.js
+- Victory
+  - index.html
+  - global.css/index.css
+  - menu.js/kategorier.js/slideshow.js
+  - header+footer
+
+- Victor
+  - opskrifter.html
+  - opskrifter.css
+  - opskrifter.js
+
+- Laura
+  - enkeltopskrift.html
+  - enkeltopskrift.css
+  - enkeltopskrift.js
+
+- Marie
+  - forms.html
+  - helloeasy.html
+  - forms.js
 
 Vores workflow:
 
-- Lave en branch med feature-navn og eget navn til sidst
-- Kode en feature
-- Committe ændringer
-- Pushe til GitHub
-- Merge til main når det virkede
+- Lav en branch med feature-navn og eget navn til sidst
+- Kod en feature
+- Commit ændringer
+- Push til GitHub
+- Merge til main når det virker
 
 Det gjorde det nemmere at holde styr på, hvem der lavede hvad.
 
@@ -270,9 +290,9 @@ Hvad vi konkret arbejder med for at udvikle websitet ift. interaktioner brugeren
 
 Dette afsnit skal liste de endpoints fra API'et i har benyttet:
 
-- [https://dummyjson.com/products]
-- [https://dummyjson.com/recipes?limit=100]
-- [https://dummyjson.com/recipes/] + id
+- (https://dummyjson.com/products)
+- (https://dummyjson.com/recipes?limit=100)
+- (https://dummyjson.com/recipes/) + id
 
 ## Gruppemedlemmer
 
@@ -280,3 +300,7 @@ Dette afsnit skal liste de endpoints fra API'et i har benyttet:
 - Marie Rosenqvist
 - Victor Happe
 - Victory Okosun
+
+```
+
+```
