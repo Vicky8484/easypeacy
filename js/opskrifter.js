@@ -63,7 +63,7 @@ function showRecipes(recipes) {
           <p>${recipe.caloriesPerServing}</p>
         </div>
 
-        <a class="recipeBtn" href="details.html?recipeId=${recipe.id}">Se Opskrift</a>
+        <a class="recipeBtn" href="enkeltopskrift.html?recipeId=${recipe.id}">Se Opskrift</a>
       </article>
     `;
   });
