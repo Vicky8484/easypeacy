@@ -14,30 +14,24 @@ img {
 
 /************ Layout **************/
 
-main {
-  padding: 2rem;
-}
-
 .forside-title {
-  margin-left: 48rem;
-  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .main-box {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 1fr 4fr;
   gap: 2rem;
   align-items: start;
 }
 
 #sidepanel {
   position: sticky;
-  top: 2rem;
+  top: 0;
   background-color: #ffc166;
   padding: 2rem;
-  padding-bottom: 27rem;
-  border-radius: 14px;
-  margin-top: 2rem;
+  padding-bottom: 40rem;
+  overflow-y: hidden;
 }
 
 #recipe-box {
@@ -112,5 +106,6 @@ main {
 
   #sidepanel {
     position: static;
+    padding-bottom: 3rem;
   }
 }
