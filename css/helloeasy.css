@@ -39,3 +39,21 @@
   width: 200px;
   margin-top: 1rem;
 }
+
+
+@media (max-width: 900px) {
+
+  .helloSection {
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  .helloBenefits {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit {
+    width: 100%;
+  }
+
+}
