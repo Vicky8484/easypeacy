@@ -1,0 +1,41 @@
+
+/*************** Reset *********************/
+.helloSection {
+  background-color: #f0e7c8;
+  margin: 3rem 15rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.helloSection h1 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.helloSection p {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.helloBenefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.benefit {
+  background-color: #ffc166;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.benefit h3 {
+  margin-bottom: 0.5rem;
+}
+
+.helloSection .button {
+  width: 200px;
+  margin-top: 1rem;
+}
