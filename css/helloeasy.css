@@ -1,16 +1,20 @@
-
 /*************** Reset *********************/
 .helloSection {
   background-color: #f0e7c8;
-  margin: 3rem 15rem;
   padding: 3rem;
   border-radius: 1rem;
   text-align: center;
+  width: 60%;
+  margin: 3rem auto;
 }
 
 .helloSection h1 {
   font-size: 36px;
   margin-bottom: 1rem;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .helloSection p {
@@ -29,6 +33,7 @@
   background-color: #ffc166;
   padding: 1.5rem;
   border-radius: 1rem;
+  width: 100%;
 }
 
 .benefit h3 {
@@ -40,12 +45,10 @@
   margin-top: 1rem;
 }
 
-
 @media (max-width: 900px) {
-
   .helloSection {
-    margin: 2rem;
-    padding: 2rem;
+    width: 80%;
+    margin: 3rem auto;
   }
 
   .helloBenefits {
@@ -55,5 +58,4 @@
   .benefit {
     width: 100%;
   }
-
 }
