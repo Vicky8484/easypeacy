@@ -16,6 +16,7 @@ img {
 
 .forside-title {
   text-align: center;
+  padding-top: 2rem;
 }
 
 .main-box {
@@ -48,7 +49,11 @@ img {
   border: 1px solid #ddd;
   border-radius: 14px;
   overflow: hidden;
-  padding: 1rem;
+}
+
+.recipe-card img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .card-title {
@@ -70,6 +75,14 @@ img {
   color: white;
   text-decoration: none;
   border-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.cardInfo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 
 /************ Filter **************/
@@ -83,7 +96,7 @@ img {
   cursor: pointer;
   background-color: #ff8445;
   color: white;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .dropdown {
@@ -96,6 +109,10 @@ img {
 
 .dropdown-content.show {
   display: block;
+}
+
+#resetBtn {
+  margin-top: 1rem;
 }
 
 /************ Responsive **************/

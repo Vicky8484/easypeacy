@@ -36,6 +36,7 @@ function showRecipes(recipes) {
     listContainer.innerHTML += `
       <article class="recipe-card">
         <img src="${recipe.image}" alt="Billede af ${recipe.name}">
+        <div class="cardInfo">
         <h2 class="card-title">${recipe.name}</h2>
 
         <div class="space">
@@ -44,7 +45,7 @@ function showRecipes(recipes) {
         </div>
 
         <div class="space">
-          <p>Cooking time</p>
+          <p>Tilberedelsestid</p>
           <p>${recipe.cookTimeMinutes} min</p>
         </div>
 
@@ -63,7 +64,13 @@ function showRecipes(recipes) {
           <p>${recipe.caloriesPerServing}</p>
         </div>
 
+          <div class="space">
+          <p>Ingredienser</p>
+          <p>${recipe.ingredients.length}</p>
+        </div>
+
         <a class="recipeBtn" href="enkeltopskrift.html?recipeId=${recipe.id}">Se Opskrift</a>
+        </div>
       </article>
     `;
   });
