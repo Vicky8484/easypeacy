@@ -2,14 +2,14 @@
 <html lang="da">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easy Peacy</title>
 
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/opskrifter.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/opskrifter.css" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="img-vid/epfavicon.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="img-vid/epfavicon.webp" />
 
     <script src="js/menu.js" defer></script>
     <script src="js/opskrifter.js" defer></script>
@@ -19,14 +19,16 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="img-vid/eplogo.webp" alt="Logo">
+                <img src="img-vid/eplogo.webp" alt="Logo" />
             </a>
         </div>
+
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="helloeasy.html">HelloEasy</a></li>
             </ul>
+
             <button class="burger">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -34,18 +36,39 @@
             </button>
         </nav>
     </header>
+
     <main>
-        <div id="main-box">
-            <div class="sidepanel"></div>
-            <div class="opskrifterWrapper">
-                <div class="opskrifterBox"></div>
-            </div>
+        <div class="forside-title">
+            <h1>Opskrifter</h1>
+        </div>
+
+        <div class="main-box">
+            <aside id="sidepanel">
+                <div class="dropdown">
+                    <button id="dropBtn" class="dropbtn">filtrer efter</button>
+
+                    <div id="myDropdown" class="dropdown-content">
+                        <button class="filterBtn" id="filterByPrep">Under 20 minutes prep</button>
+                        <button class="filterBtn" id="filterByCook">Under 20 minutes cooking</button>
+                        <button class="filterBtn" id="filterByLess">4 servings or less</button>
+                        <button class="filterBtn" id="filterByMore">4 servings or more</button>
+                        <button class="filterBtn" id="filterByIngredients">Under 10 ingredienser</button>
+                        <button class="filterBtn" id="filterByIngredients2">Over 10 ingredienser</button>
+                        <button class="filterBtn" id="filterByCalories">Under 300 kalorier</button>
+                        <button class="filterBtn" id="filterByCalories2">Under 500 kalorier</button>
+                    </div>
+                </div>
+
+                <button class="filterBtn" id="resetBtn">Vis alle</button>
+            </aside>
+
+            <section id="recipe-box"></section>
         </div>
     </main>
-    <footer>
-        <div class="tern-box">
 
-        </div>
+    <footer>
+        <div class="tern-box"></div>
+
         <div class="footerInfo-box">
             <p>Email: easypeacyfood@gmail.com</p>
             <p>Telefon nummer: 12 34 56 78</p>
