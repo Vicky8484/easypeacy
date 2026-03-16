@@ -4,10 +4,6 @@
   grid-template-columns: 1fr 4fr;
 }
 
-/* #hero-box {
-  display: none;
-} */
-
 /****** sidepanel + children ******/
 .sidepanel {
   text-align: center;
@@ -52,6 +48,12 @@
   margin-bottom: 1rem;
 }
 
+.indsendInfo {
+  padding: 2rem;
+  padding-top: 1rem;
+  text-wrap: balance;
+  color: #2c2c2c;
+}
 /****** sections + children ******/
 .nyeOpskrifterSection {
   background-color: #f0e7c8;
@@ -98,8 +100,8 @@
 }
 
 .blivMedlemSection {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .blivMedlemSection h1 {
@@ -120,7 +122,6 @@
 }
 
 .blivmedlem {
-  background-color: #f0e7c8;
   text-align: center;
   align-content: center;
 }
@@ -226,6 +227,18 @@
     margin: auto;
     margin-top: 1rem;
     overflow-x: auto;
+  }
+
+  .bmInfoBox {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .bminfo {
+    text-align: center;
+    text-wrap: balance;
+    padding: 1rem 2rem 2rem;
+    margin: 0;
   }
 }
 
