@@ -33,6 +33,11 @@ main {
 #sidepanel {
   position: sticky;
   top: 2rem;
+  background-color: #ffc166;
+  padding: 2rem;
+  padding-bottom: 27rem;
+  border-radius: 14px;
+  margin-top: 2rem;
 }
 
 #recipe-box {
