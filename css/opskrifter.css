@@ -29,7 +29,7 @@ img {
 #sidepanel {
   position: sticky;
   top: 0;
-  background-color: #ffc166;
+  background-color: #ff8445;
   padding: 2rem;
   padding-bottom: 40rem;
   overflow-y: hidden;
@@ -59,17 +59,12 @@ img {
 .card-title {
   margin: 1rem 0;
   font-size: 1.3rem;
-}
-
-.space {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
+  color: #232323;
 }
 
 .recipeBtn {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   padding: 0.7rem 1rem;
   background: #ff8445;
   color: white;
@@ -77,6 +72,10 @@ img {
   border-radius: 8px;
   width: 100%;
   text-align: center;
+}
+
+.recipeBtn:hover {
+  filter: brightness(90%);
 }
 
 .cardInfo {
@@ -94,9 +93,20 @@ img {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #ff8445;
+  background-color: #b22000;
   color: white;
   font-size: 1rem;
+}
+
+.filterBtn {
+  width: 90%;
+  margin: auto 10px 10px;
+  background-color: #ffc166;
+}
+
+.filterBtn:hover,
+.dropbtn:hover {
+  filter: brightness(90%);
 }
 
 .dropdown {
@@ -113,8 +123,49 @@ img {
 
 #resetBtn {
   margin-top: 1rem;
+  width: 90%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #b22000;
+  color: white;
+  font-size: 1rem;
 }
 
+#resetBtn:hover {
+  filter: brightness(90%);
+}
+
+.ikon {
+  border: #00000066 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.5rem;
+  color: #000000bf;
+}
+
+.ikon-img {
+  height: 70%;
+  padding: 0.6rem;
+}
+
+.space {
+  border: #00000066 2px solid;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #000000ca;
+}
+
+.ikonBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
 /************ Responsive **************/
 @media (max-width: 800px) {
   .main-box {
@@ -124,5 +175,14 @@ img {
   #sidepanel {
     position: static;
     padding-bottom: 3rem;
+  }
+
+  .ikon-img {
+    height: 80%;
+    padding: 0.6rem;
+  }
+
+  .ikon {
+    padding-bottom: 1rem;
   }
 }

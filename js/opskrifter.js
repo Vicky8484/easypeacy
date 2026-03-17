@@ -39,35 +39,30 @@ function showRecipes(recipes) {
         <div class="cardInfo">
         <h2 class="card-title">${recipe.name}</h2>
 
-        <div class="space">
-          <p>Forberedelsestid</p>
-          <p>${recipe.prepTimeMinutes} min</p>
+        <div class="ikonBox">
+        <div class="ikon">
+          <img class="ikon-img" src="img-vid/ur-ikon.webp" alt="tid">
+          <p>${recipe.prepTimeMinutes + recipe.cookTimeMinutes}</p>
+          <p>minutter</p>
         </div>
 
-        <div class="space">
-          <p>Tilberedelsestid</p>
-          <p>${recipe.cookTimeMinutes} min</p>
-        </div>
-
-        <div class="space">
-          <p>Personer</p>
+        <div class="ikon">
+          <img class="ikon-img" src="img-vid/person-ikon.webp" alt="tid">
           <p>${recipe.servings}</p>
+          <p>serveringer<p/>
         </div>
 
+   <div class="ikon">
+          <img class="ikon-img" src="img-vid/carrot-icon.webp" alt="tid">
+          <p>${recipe.ingredients.length}</p>
+          <p>ingredienser</p>
+        </div>
+</div>
         <div class="space">
           <p>Sværhedsgrad</p>
           <p>${recipe.difficulty}</p>
         </div>
 
-        <div class="space">
-          <p>Kalorier</p>
-          <p>${recipe.caloriesPerServing}</p>
-        </div>
-
-          <div class="space">
-          <p>Ingredienser</p>
-          <p>${recipe.ingredients.length}</p>
-        </div>
 
         <a class="recipeBtn" href="enkeltopskrift.html?recipeId=${recipe.id}">Se Opskrift</a>
         </div>
