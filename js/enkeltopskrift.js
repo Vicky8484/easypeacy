@@ -20,11 +20,11 @@ function show(recipe) {
                     <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="Billede af ${recipe.name}">
                    <div class="recipe-info">
                       <h2>${recipe.name}</h2>
-                      <p><span>Prep time:</span><span>${recipe.prepTimeMinutes} min.</span></p>
-                      <p><span>Cooking time:</span><span>${recipe.cookTimeMinutes} min.</span></p>
+                      <p><span>Prep time:</span><span>${recipe.prepTimeMinutes} min</span></p>
+                      <p><span>Cooking time:</span><span>${recipe.cookTimeMinutes} min</span></p>
                       <p><span>Servings:</span><span>${recipe.servings}</span></p>
                       <p><span>Difficulty:</span><span>${recipe.difficulty}</span></p>
-                      <p><span>Rating:</span><span>${recipe.rating}/5 stjerner af ${recipe.reviewCount} bedømmelser. </span></p>
+                      <p><span>Rating:</span><span>${recipe.rating}/5 stjerner - ${recipe.reviewCount} bedømmelser</span></p>
                     </div>
 
                 </div>
@@ -36,7 +36,7 @@ function show(recipe) {
 
                     <button type="button" class="collapsible">▶ Instruktioner</button>
                     <div class="content">
-                        <ol><li>${recipe.instructions.join("</li><li>")}</li></ol>
+                        <ul><li>${recipe.instructions.join("</li><li>")}</li></ul>
                     </div>
 
                     <button type="button" class="collapsible">▶ Information</button>

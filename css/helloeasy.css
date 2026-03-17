@@ -8,6 +8,11 @@
   margin: 3rem auto;
 }
 
+.helloimg {
+  width: 70%;
+  margin: auto;
+}
+
 .helloSection h1 {
   font-size: 36px;
   margin-bottom: 1rem;
@@ -45,6 +50,17 @@
   margin-top: 1rem;
 }
 
+.login {
+  background-color: #222222;
+  color: white;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.login:hover {
+  background-color: #323232;
+}
+
 @media (max-width: 900px) {
   .helloSection {
     width: 80%;
@@ -57,5 +73,10 @@
 
   .benefit {
     width: 100%;
+  }
+
+  .helloimg {
+    width: 100%;
+    margin: auto;
   }
 }

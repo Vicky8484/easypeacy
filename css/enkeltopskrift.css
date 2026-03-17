@@ -23,14 +23,15 @@ button {
 /******************************** 1. opskriftSection - billede og tekst ********************************/
 .opskriftSection {
   background-color: #f0e7c8;
-  margin: 3rem 15rem 0;
   border-radius: 1rem 1rem 0 0;
   padding-bottom: 3rem;
+  width: 60%;
+  margin: 3rem auto 0;
 }
 
 .opskriftHeader {
   display: flex;
-  padding: 3rem 8rem;
+  padding: 2rem 2rem;
   gap: 2rem;
 }
 
@@ -39,7 +40,7 @@ button {
 }
 
 .opskriftHeader img {
-  width: 400px;
+  width: 45%;
   border-radius: 2rem;
 }
 
@@ -57,7 +58,7 @@ button {
 .collapsible {
   background-color: #f0e7c8;
   cursor: pointer;
-  padding: 2rem 8rem 1.5rem;
+  padding: 1rem 3rem 1.5rem;
   width: 100%;
   border: none;
   text-align: left;
@@ -73,7 +74,7 @@ button {
 
 /* når den er klikket på */
 .content {
-  padding: 0rem 10rem 2rem;
+  padding: 0rem 5rem 2rem;
   display: none;
   background-color: #f0e7c8;
 }
@@ -85,8 +86,9 @@ button {
 /******************************** 2. kommentarSection  ********************************/
 .kommentarSection {
   background-color: #ffc166;
-  margin: 0 15rem;
-  padding: 4rem 15rem;
+  width: 60%;
+  margin: auto;
+  padding: 2rem 3rem;
 }
 
 .box {
@@ -129,7 +131,9 @@ button {
 /******************************** 3. ratingSection  ********************************/
 .ratingSection {
   background-color: #f0e7c8;
-  margin: 0rem 15rem 3rem;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2rem;
   border-radius: 0 0 1rem 1rem;
   padding: 5rem;
   text-align: center;
@@ -169,25 +173,27 @@ button {
 }
 
 /******************************** Mindre version  ********************************/
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
   /* 1 */
   .opskriftSection {
-    margin: 3rem 10rem 0;
-    justify-self: center;
+    width: 80%;
+    margin: auto;
   }
 
-  .collapsible {
-    padding: 1rem 5rem;
+  .opskriftHeader img {
+    width: 90%;
+    border-radius: 2rem;
   }
 
   /* 2 */
   .kommentarSection {
-    margin: 0 10rem 0;
-    padding: 8rem;
+    width: 80%;
+    margin: auto;
   }
 
   .box {
     margin: 1rem 0;
+    width: 90%;
   }
 
   .box2 {
@@ -208,12 +214,13 @@ button {
 
 /******************************** MOBIL  ********************************/
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   /* 1 */
 
   img {
     display: block;
     margin: 0 auto;
+    width: 100%;
   }
 
   .opskriftSection {
