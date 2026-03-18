@@ -16,12 +16,32 @@ const dropdown = document.querySelector("#myDropdown");
 
 let allRecipes = [];
 
+function getQueryParam(param) {
+  return new URLSearchParams(window.location.search).get(param);
+}
+
+function applyMealTypeFilter(recipes) {
+  const mealType = getQueryParam("mealType");
+  if (!mealType) {
+    return recipes;
+  }
+
+  const mealTypeLower = mealType.toLowerCase();
+  return recipes.filter((recipe) => Array.isArray(recipe.mealType) && recipe.mealType.some((mt) => mt.toLowerCase() === mealTypeLower));
+}
+
 function getRecipes() {
   fetch(listURL)
     .then((res) => res.json())
     .then((data) => {
       allRecipes = data.recipes;
-      showRecipes(allRecipes);
+      const filteredRecipes = applyMealTypeFilter(allRecipes);
+      if (filteredRecipes.length === 0) {
+        const selectedMealType = getQueryParam("mealType");
+        listContainer.innerHTML = `<p>Ingen opskrifter fundet for kategori "${selectedMealType}".</p>`;
+      } else {
+        showRecipes(filteredRecipes);
+      }
     })
     .catch((error) => {
       console.error("Fejl ved hentning af opskrifter:", error);
