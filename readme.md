@@ -267,13 +267,13 @@ Et lettere website kræver færre ressourcer at loade og bruge.
 
 ## Udfordringer undervejs
 
-Skriv om udfordringer på mandag/tirsdag?
+Vi havde ikke de store udfordringer undervejs i kodningen. Vi har ikke oplevet nogen problemer med at merge eller andet.
 
 ## Mulige forbedringer
 
 Hvis vi skulle arbejde videre med projektet, kunne vi forbedre det ved at tilføje:
 
-- Skriv noget
+- Ved at udpensle forventninger til hvor godt siderne skal kodes lidt mere. Vi havde måske lidt forskellige forventninger til responsivitet osv.
 
 # Funktionalitet
 
