@@ -224,29 +224,47 @@ button {
   }
 
   .opskriftSection {
-    margin: 2rem 2rem 0;
+    margin: auto;
+    margin-top: 2rem;
   }
 
   .opskriftHeader {
     display: grid;
     grid-template-columns: 1fr;
     justify-self: center;
-    padding: 3rem 5rem 1rem;
+    padding: 3rem 2rem 1rem;
   }
 
   .collapsible {
-    padding: 1rem 5rem;
+    padding: 1rem 2rem;
   }
 
   /* 2 */
 
   .kommentarSection {
-    margin: 0 2rem 0;
-    padding: 5rem;
+    padding: 2rem;
+    margin: auto;
+  }
+
+  .box {
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 1rem;
+  }
+
+  .box2 {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    padding-left: 2rem;
+    padding-block: 2rem;
+    margin-bottom: 2rem;
   }
 
   /* 3 */
   .ratingSection {
-    margin: 0 2rem 2rem;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 2rem;
   }
 }

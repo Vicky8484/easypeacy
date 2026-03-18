@@ -83,7 +83,7 @@ function show(recipe) {
 
             <div class="ratingSection">
 
-                <h2>Bedøm Opskriften</h2>
+                <h2>Bedøm opskriften</h2>
                 <div class="rating">
 
                     <input type="radio" id="star5" name="rating" value="5">
