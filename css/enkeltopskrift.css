@@ -45,7 +45,7 @@ button {
 }
 
 .opskriftHeader p {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   font-size: 18px;
 }
 
@@ -92,18 +92,22 @@ button {
 }
 
 .box {
-  border-radius: 2rem;
-  padding: 2rem;
-  background-color: #fff;
-  margin: 1.5rem 0;
+  border-radius: 20px;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  background-color: #ffecce;
+  margin-top: 0.8rem;
+  color: #2d2d2d;
+  padding: 1rem;
 }
 
 .box2 {
-  border-radius: 2rem;
-  padding: 4rem 10rem 4rem 11rem;
+  border-radius: 20px;
+  width: 100%;
+  padding: 1rem 1rem 2rem;
   background-color: #fff;
   display: block;
-  margin: 0 auto 1.5rem;
+  margin-block: 1rem;
   border: none;
   font-family: "Lexend", sans-serif;
   font-size: 18px;
@@ -115,7 +119,6 @@ button {
 }
 
 .kommentarSection p {
-  margin: 1.5rem 0;
   font-size: 18px;
 }
 
@@ -125,7 +128,7 @@ button {
 }
 
 .skrivHer {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 /******************************** 3. ratingSection  ********************************/

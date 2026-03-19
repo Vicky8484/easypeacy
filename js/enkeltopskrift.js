@@ -20,10 +20,10 @@ function show(recipe) {
                     <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="Billede af ${recipe.name}">
                    <div class="recipe-info">
                       <h2>${recipe.name}</h2>
-                      <p><span>Prep time:</span><span>${recipe.prepTimeMinutes} min</span></p>
-                      <p><span>Cooking time:</span><span>${recipe.cookTimeMinutes} min</span></p>
-                      <p><span>Servings:</span><span>${recipe.servings}</span></p>
-                      <p><span>Difficulty:</span><span>${recipe.difficulty}</span></p>
+                      <p><span>Forberedelse:</span><span>${recipe.prepTimeMinutes} min</span></p>
+                      <p><span>Tilberedelse:</span><span>${recipe.cookTimeMinutes} min</span></p>
+                      <p><span>Serveringer:</span><span>${recipe.servings}</span></p>
+                      <p><span>Sværhedsgrad:</span><span>${recipe.difficulty}</span></p>
                       <p><span>Rating:</span><span>${recipe.rating}/5 stjerner - ${recipe.reviewCount} bedømmelser</span></p>
                     </div>
 
@@ -58,17 +58,17 @@ function show(recipe) {
                 <p>3 Kommentarer</p>
 
                 <div class="box">
-                    <h3>Cecilia</h3>
+                    <h4>Cecilia</h4>
                     <p>Prøvede den her opskrift i går, vildt lækker!</p>
                 </div>
 
                 <div class="box">
-                    <h3>Martin</h3>
+                    <h4>Martin</h4>
                     <p>Den var hamar-god haha.. (fik du den?)</p>
                 </div>
 
                 <div class="box">
-                    <h3>Anemone</h3>
+                    <h4>Anemone</h4>
                     <p>Lækker nem opskrift, laver helt klart igen en anden gang!</p>
                 </div>
 
