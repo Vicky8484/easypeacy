@@ -117,7 +117,6 @@ header {
 body {
   background-color: #fff6d8;
   font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -125,7 +124,6 @@ body {
 /************ knapper **********/
 .button {
   font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   display: inline-block;
@@ -161,15 +159,11 @@ body {
 }
 
 /************ footer **********/
-.tern-box {
-  height: 200px;
-  background-image: url("../img-vid/ternet-baggrund.webp");
-}
 .footerInfo-box {
   background-color: #b22000;
   color: #edf2f4;
   padding: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lexend", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;

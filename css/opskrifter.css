@@ -46,7 +46,6 @@ img {
 /************ Cards **************/
 .recipe-card {
   background: #ffc166;
-  border: 1px solid #ddd;
   border-radius: 14px;
   overflow: hidden;
 }
@@ -96,6 +95,9 @@ img {
   background-color: #b22000;
   color: white;
   font-size: 1rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .filterBtn {
@@ -139,7 +141,7 @@ img {
 }
 
 .ikon {
-  border: #00000066 2px solid;
+  background-color: #f6b657;
   border-radius: 10px;
   text-align: center;
   padding: 0.5rem;
@@ -147,18 +149,19 @@ img {
 }
 
 .ikon-img {
-  height: 70%;
+  height: 60%;
   padding: 0.6rem;
+  opacity: 80%;
 }
 
 .space {
-  border: #00000066 2px solid;
   margin-top: 0.5rem;
   border-radius: 10px;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   color: #000000ca;
+  background-color: #f6b657;
 }
 
 .ikonBox {
